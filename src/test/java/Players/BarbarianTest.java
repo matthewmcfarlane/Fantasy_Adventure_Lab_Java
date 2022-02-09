@@ -1,7 +1,7 @@
 package Players;
 
-import Behaviours.IWeapon;
 import MeleeWeapons.Axe;
+import Players.Fighters.Barbarian;
 import org.junit.Before;
 import org.junit.Test;
 

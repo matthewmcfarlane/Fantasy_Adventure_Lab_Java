@@ -1,7 +1,7 @@
 package Players.Fighters;
 
 import Behaviours.IWeapon;
-import Players.Fighters.Player;
+import Players.Player;
 
 public abstract class Fighter extends Player {
 

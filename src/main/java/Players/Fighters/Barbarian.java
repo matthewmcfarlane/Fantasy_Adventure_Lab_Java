@@ -1,4 +1,4 @@
-package Players;
+package Players.Fighters;
 
 import Behaviours.IWeapon;
 import Players.Fighters.Fighter;
