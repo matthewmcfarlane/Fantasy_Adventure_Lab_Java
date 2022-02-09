@@ -5,7 +5,7 @@ import Players.Player;
 
 
 
-public class Healer extends Player {
+public abstract class Healer extends Player {
 
     private IHeal heals;
 
