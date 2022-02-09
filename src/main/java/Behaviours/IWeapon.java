@@ -1,6 +1,8 @@
 package Behaviours;
 
+import Enemies.Enemy;
+
 public interface IWeapon {
 
-    public int attack();
+    public void attack(Enemy enemy);
 }
