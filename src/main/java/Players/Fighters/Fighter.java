@@ -1,6 +1,7 @@
 package Players.Fighters;
 
 import Behaviours.IWeapon;
+import Enemies.Enemy;
 import Players.Player;
 
 public abstract class Fighter extends Player {
@@ -20,5 +21,12 @@ public abstract class Fighter extends Player {
         this.weapon = weapon;
     }
 
+    public void switchWeapon(IWeapon weapon){
+        setWeapon(weapon);
+    }
+
+    public void attackEnemy(Enemy enemy){
+        this.weapon.attack(enemy);
+    }
 
 }

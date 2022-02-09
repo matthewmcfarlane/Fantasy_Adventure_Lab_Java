@@ -11,3 +11,4 @@ public class Barbarian extends Fighter {
 
 
 }
+

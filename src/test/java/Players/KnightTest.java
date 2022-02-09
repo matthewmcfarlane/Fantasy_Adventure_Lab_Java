@@ -4,15 +4,15 @@ import Enemies.Orc;
 import MeleeWeapons.Axe;
 import MeleeWeapons.Club;
 import MeleeWeapons.Sword;
-import Players.Fighters.Barbarian;
+import Players.Fighters.Knight;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class BarbarianTest {
+public class KnightTest {
 
-    private Barbarian barbarian;
+    private Knight knight;
     private Sword sword;
     private Axe axe;
     private Club club;
@@ -23,25 +23,25 @@ public class BarbarianTest {
         sword = new Sword();
         axe = new Axe();
         club = new Club();
-        barbarian = new Barbarian("Thor", 100, sword);
+        knight = new Knight("Thor", 100, sword);
         orc = new Orc(100);
     }
 
     @Test
     public void hasWeapon() {
-        assertEquals(sword, barbarian.getWeapon());
+        assertEquals(sword, knight.getWeapon());
     }
 
     @Test
     public void canSwitchWeapon(){
-        barbarian.switchWeapon(axe);
-        barbarian.switchWeapon(club);
-        assertEquals(club, barbarian.getWeapon());
+        knight.switchWeapon(axe);
+        knight.switchWeapon(club);
+        assertEquals(club, knight.getWeapon());
     }
 
     @Test
     public void canAttackEnemy(){
-        barbarian.attackEnemy(orc);
+        knight.attackEnemy(orc);
         assertEquals(50, orc.getHealthPoints());
 
 
