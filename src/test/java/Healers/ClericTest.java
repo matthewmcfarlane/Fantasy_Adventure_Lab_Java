@@ -1,4 +1,4 @@
-package Players;
+package Healers;
 
 import HealingItems.Herb;
 import HealingItems.Potion;

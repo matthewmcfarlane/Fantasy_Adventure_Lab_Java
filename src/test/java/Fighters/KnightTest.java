@@ -1,4 +1,4 @@
-package Players;
+package Fighters;
 
 import Enemies.Orc;
 import MeleeWeapons.Axe;
