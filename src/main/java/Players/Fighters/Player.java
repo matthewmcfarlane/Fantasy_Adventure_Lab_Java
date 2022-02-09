@@ -1,4 +1,4 @@
-package Players;
+package Players.Fighters;
 
 public abstract class Player {
 
